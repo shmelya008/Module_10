@@ -13,14 +13,12 @@ class Knight(Thread):
         print(f"{self.name}, на нас напали!")
         enemy = 100
         day = 0
-        for i in range(enemy):
+        while enemy > 0:
             enemy -= self.power
-            if enemy <= 0:
-                break
             day += 1
-            print(f"{self.name} сражается {day} день, осталось {enemy} воинов.")
+            print(f"{self.name} сражается {day} день, осталось {enemy} воинов."' ')
             sleep(1)
-        print(f"{self.name} одержал победу спустя {day} дней(дня)!")
+        print(f"{self.name} одержал победу спустя {day} дней!"' ')
 
 
 first_knight = Knight("Sir Lancelot", 10)
@@ -35,4 +33,5 @@ thread_2.start()
 thread_1.join()
 thread_2.join()
 
+print()
 print('Все битвы закончились!')
