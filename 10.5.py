@@ -16,8 +16,7 @@ def read_info(name):
 
 
 file_names = 'file 1.txt', 'file 2.txt', 'file 3.txt', 'file 4.txt'
-for i in file_names:
-    name = i
+for name in file_names:
     read_info(name)
 
 time_end = datetime.now()
